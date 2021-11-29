@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical documentation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header class="navbar-header">
+            <h1>HTML documentation</h1>
+        </header>
+        <div class="nav-links">
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#Tags" class="nav-link">Tags</a>
+            <a href="#Forms" class="nav-link">Forms</a>
+            <a href="#Buttons" class="nav-link">Buttons</a>
+            <a href="#DOM" class="nav-link">Dom</a>
+        </div>
+    </nav>
+
+    <main id="main-doc" class="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>
+                <h1>Introduction</h1>
+            </header>
+           
+            <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+            </p>
+            <p>
+                Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+            </p>
+            <pre><code>
+                &lt;!DOCTYPE html>
+                &lt;html lang="en">
+                &lt;head>
+                    &lt;meta charset="UTF-8">
+                    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    &lt;title>Document &lt;/title>
+                &lt;/head>
+                &lt;body>
+                    
+                &lt;/body>
+                &lt;/html>
+            </code></pre>
+        </section>
+        <section class="main-section" id="Tags">
+            <header>
+                <h1>Tags</h1>
+            </header>
+          
+            <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as &lt;img /> and &lt;input /> directly introduce content into the page. Other tags such as &lt;p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.</p>
+
+            <p>Some Examples of Tags</p>
+            <pre><code>
+                &lt;div>&lt;/div>&lt;h1>&lt;/h1>&lt;button>&lt;/button>&lt;img src="" alt="">&lt;form action="">&lt;/form>
+            </code></pre>
+        </section>
+        <section class="main-section" id="Forms">
+            <header>
+                <h1>Forms</h1>
+            </header>
+          
+
+            <p>The &lt;form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+    
+            <p>A simple form...</p>
+
+            <pre><code>
+                &lt;form action="">
+                    &lt;label for="name">name&lt;/label>
+                    &lt;input type="text">
+                    &lt;label for="age">age&lt;/label>
+                    &lt;input type="number">
+                    &lt;label for="password">password&lt;/label>
+                    &lt;input type="text">
+                </form>
+            </code></pre>
+        </section>
+        <section class="main-section" id="Buttons">
+            <header>
+                <h1>Buttons</h1>
+            </header>
+          
+
+            <p>he &lt;button> tag defines a clickable button.
+
+                Inside a &lt;button> element you can put text (and tags like &lt;i>, &lt;b>, &lt;strong>, &lt;br>, &lt;img>, etc.). That is not possible with a button created with the &lt;input> element!</p>
+            <p>Buttons are cool ! here's an Examples...</p>
+            <pre><code>
+                &lt;button onclick="dothisFunction">Click Me&lt;/button>
+            </code></pre>
+        </section>
+        <section class="main-section" id="DOM">
+            <header>
+                <h1>DOM</h1>
+            </header>
+         
+            <p>The DOM is</p>
+            <ul>
+                <li>The defining document</li>
+                <li>A way to manage data</li>
+                <li>A tree of html tags</li>
+                <li>The structure of html</li>
+                <li>The Document Object Model (DOM)</li>
+            </ul>
+            <p>The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree; with them one can change the structure, style or content of a document. Nodes can have event handlers attached to them. Once an event is triggered, the event handlers get executed.</p>
+
+            <p>The DOM is nested html tags</p>
+            <pre><code>
+            &lt;div>
+                &lt;section>
+                    &lt;h1>&lt;/h1>
+                &lt;/section>
+                &lt;section>&lt;/section>
+            &lt;/div>
+            &lt;div>&lt;/div>
+            &lt;div>
+                &lt;div>
+                    &lt;button>
+
+                    &lt;/button>
+                   &lt;/div>
+                &lt;div>  &lt;/div>
+                &lt;/div>
+            </code></pre>
+            <p>The principal standardization of the DOM was handled by the World Wide Web Consortium (W3C), which last developed a recommendation in 2004. WHATWG took over the development of the standard, publishing it as a living document. The W3C now publishes stable snapshots of the WHATWG standard.</p>
+        </section>
+
+    </main>
+</body>
+</html>
